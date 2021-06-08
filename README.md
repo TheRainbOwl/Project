@@ -1,2 +1,2 @@
-Project 
-Para iniciar el server: npm run dev
+# Project 
+Para iniciar el server: `npm run dev`
