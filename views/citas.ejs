@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="principal_styles.css">
+    <style>
+        header > div{
+            width: 50px;
+            background: red;
+        }
+          
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="principal">Atras</a>
+        </div>
+        <h1>MedicCloud</h1>
+        <div>
+            <a href="/">Salir</a>
+        </div>
+    </header>
+    <div>
+        <form action="/send-cita-form" method="POST">
+            <label for="usuario">Paciente</label>
+            <input type="text" name="usuario" id="username" autocomplete="off">
+            <label for="day">Dia</label>
+            <input type="date" name="day" id="date" autocomplete="off">
+            <label for="hour">Hora</label>
+            <input type="time" name="hour" id="hour">
+            <label for="doctor">Doctor</label>
+            <select name="selectionDoctor" id="selectionDoctor">
+                <option value="<%=dataMedico[0].nombre %>">
+                    <%= dataMedico[0].nombre %>
+                </option>
+                <option value="<%=dataMedico[1].nombre %>">
+                    <%= dataMedico[1].nombre %>
+                </option>
+            </select>
+            <input type="submit">
+            <button type="reset" name="eliminar">Elimina</button>
+        </form>
+    </div>
+</body>
+</html>

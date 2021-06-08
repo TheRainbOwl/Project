@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #7678ED;
+
+}
+.contenedor{
+    box-shadow: 0 0 10px #383BE5;
+    background-color: #F9B5AC;
+    width: 30%;
+    padding: 30px;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+.form{
+    background-color: #C7EAE4;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.form label,
+.form input{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+.form button[name="iniciar"],
+.form button[name="eliminar"]{
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: #78C0FF;
+    transition-duration: 300ms;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form button[name="eliminar"]{
+    margin-top: 5px;
+    background-color: #FF282F;
+}
+.form button[name="iniciar"] > a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition-duration: 300ms;
+}
+.form button[name="iniciar"]:hover{
+    
+    background-color: #41A6FF;
+    cursor: pointer;
+}
+.form button[name="iniciar"]:hover > a{
+    color: white;
+}
+.form button[name="eliminar"]:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #CF0008;
+}

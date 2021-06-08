@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="principal_styles.css">
+    <style>
+        header > div{
+            width: 50px;
+            background: red;
+        }
+          
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="principal">Atras</a>
+        </div>
+        <h1>MedicCloud</h1>
+        <div>
+            <a href="/">Salir</a>
+        </div>
+    </header>
+    <div>
+        <form action="/send-doctor-form" method="POST">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" required="on" autocomplete="off">
+            <label for="apellido1">Apellido Paterno</label>
+            <input type="text" name="apellido1" id="apellido1" required="on" autocomplete="off">
+            <label for="apellido2">Apellido materno</label>
+            <input type="text" name="apellido2" id="apellido2" required="on" autocomplete="off">
+            <label for="curp">CURP</label>
+            <input type="text" name="curp" id="curp" minlength="18" autocomplete="off">
+            <label for="nss">NSS</label>
+            <input type="number" name="nss" id="nss" required="on">
+            <label for="sexo">Sexo</label>
+            <div class="sexo-container">
+                <input type="radio" name="sexo" value="F" id="sexoF">
+                <label for="sexoF">Femenino</label>
+                <input type="radio" name="sexo" id="sexoM" value="M">
+                <label for="sexoM">Masculino</label>
+            </div>
+            <label for="direction">Direccion</label>
+            <input type="text" name="direction" id="direction" required="on" autocomplete="off">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento" required="on" pattern="\d{4}-\d{2}-\d{2}">
+            <label for="ingreso">Fecha de ingreso</label>
+            <input type="date" name="ingreso" id="ingreso" required="on" pattern="\d{4}-\d{2}-\d{2}">
+            <label for="user">Usuario</label>
+            <input type="text" name="user" id="user" required="on" autocomplete="off">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <label for="especialidad">Especialidad</label>
+            <select name="especialidades" id="especialidades">
+                <option value="especialidad1">Especialidad1</option>
+                <option value="especialidad2">Especialidad2</option>
+                <option value="especialidad3">Especialidad3</option>
+                <option value="especialidad4">Especialidad4</option>
+                <option value="especialidad5">Especialidad5</option>
+            </select>
+            <input type="submit">
+            <button type="reset" name="eliminar">Elimina</button>
+        </form>
+    </div>
+</body>
+</html>
